@@ -4,10 +4,10 @@
 -----------------------
 
 ## 👋Introduction
-Do you often need to query the IP address of the service? Try apilighthouse, which will help you improve efficiency. Uniformly manage all service URL addresses here.
+Do you often look up tables one by one to get urls when deploying the system offline? Try apilighthouse, which will help you improve efficiency. Uniformly manage all service URL addresses here.
 
 This is a cloud native cross cloud connector base.
-Make the delivery personnel no longer need to configure too much content during the privatization deployment, and improve the product delivery efficiency
+Make the delivery personnel no longer need to configure too much content during offline, and improve the product delivery efficiency
 
 ## ⚡Quick Start
 

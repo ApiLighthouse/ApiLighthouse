@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:./main.db
+    username: root
+    password: 123456
+    spring:
+      datasource:
+        driver-class-name: org.sqlite.JDBC
+
+server:
+  port: 8080

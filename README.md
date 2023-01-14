@@ -70,6 +70,14 @@ This project has more than 10 stars, and I firmly believe that this momentum can
 
 I hope that after a few years, the product will be widely used in the industry. We can have the opportunity to call you to thank you for your contribution to the code submission of this project, and invite you to join us to share our common victory fruits.
 
+#### The following content is waiting to be implemented
+
+- [x] backend implementation
+
+- [ ] support GUI
+
+- [ ] support ChatGPT 
+
 # 💬 Question
 
 #### Why not use DNS?

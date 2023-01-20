@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:sqlite:${sqlite_url:main.db}
+    username: ${sqlite_username:root}
+    password: ${sqlite_password:123456}
+    spring:
+      datasource:
+        driver-class-name: org.sqlite.JDBC

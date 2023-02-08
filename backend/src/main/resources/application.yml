@@ -8,3 +8,11 @@ spring:
     spring:
       datasource:
         driver-class-name: org.sqlite.JDBC
+
+
+custom:
+  docker:
+    enable: true
+    exclude-containers: apilighthouse
+    docker-host: tcp://127.0.0.1:2375
+    docker-tls-verify: false

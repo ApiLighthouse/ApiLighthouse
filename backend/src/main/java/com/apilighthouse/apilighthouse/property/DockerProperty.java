@@ -16,7 +16,7 @@ public class DockerProperty {
     /**
      * 是否启用
      */
-    private Boolean enable = true;
+    private Boolean enable = false;
 
     /**
      * 排队的容器，以，分隔

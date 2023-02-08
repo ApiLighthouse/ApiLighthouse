@@ -1,6 +1,7 @@
 package com.apilighthouse.apilighthouse.service;
 
 import com.apilighthouse.apilighthouse.entity.TLighthouse;
+import com.apilighthouse.apilighthouse.property.DockerProperty;
 import com.apilighthouse.apilighthouse.util.ReplaceFileContents;
 import com.github.dockerjava.api.command.InspectContainerResponse;
 import com.github.dockerjava.api.model.Container;
@@ -20,10 +21,12 @@ public class FreshService {
     TLighthouseService tLighthouseService;
     @Autowired
     private  DockerService dockerService;
+    @Autowired
+    private DockerProperty dockerProperty;
 
     Boolean bIsInit = new Boolean(true);
 
-//    @Scheduled(cron="*/5 * * * * ?")
+    @Scheduled(cron="*/5 * * * * ?")
     public void doSomeWork(){
 
         try {
@@ -43,8 +46,6 @@ public class FreshService {
         });
 
 
-
-
         Process proc = null;
 
             ReplaceFileContents.write(list);
@@ -59,6 +60,10 @@ public class FreshService {
 
     @Scheduled(cron="*/5 * * * * ?")
     public void doDockerList(){
+
+        if(!dockerProperty.getEnable()){
+            return;
+        }
 
         List<Container> allRunContainerList = dockerService.getRunContainerList();
 
